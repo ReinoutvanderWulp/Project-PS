@@ -3,10 +3,17 @@
     padding-bottom: 0;
 }
 
-body {
-    width: 80%;
+.div {
     background-color: #ffc382;
     color: black;
+}
+
+header {
+    background-color: sandybrown;
+}
+
+footer {
+    background-color: sandybrown;
 }
 
 ul {
@@ -32,6 +39,11 @@ li a:hover {
 .active {
     background-color: sandybrown;
     color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -64,6 +76,11 @@ li a:hover {
         background-color: sandybrown;
         color: black;
     }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -95,5 +112,10 @@ li a:hover {
     .active {
         background-color: sandybrown;
         color: black;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
     }
 }
