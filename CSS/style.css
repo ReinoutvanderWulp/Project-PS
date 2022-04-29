@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ffc382;
+    color: black;
 }
 
 .div {
@@ -37,6 +39,10 @@ h2 {
     color: sandybrown;
 }
 
+h5, h6 {
+    color: black;
+}
+
 .btn-primary {
     background-color: sandybrown;
     color: black;
@@ -55,17 +61,27 @@ h2 {
     border: none;
 }
 
+.card {
+    background-color: sandybrown;
+    color: black;
+}
+
 #bottom {
     margin: 10px;
-    color: white;
+    color: blue;
 }
 
 #top {
     margin: 10px;
-    color: white;
+    color: blue;
 }
 
 img {
+    width: 50%;
+    height: auto;
+}
+
+.logo {
     width: 100%;
     height: auto;
 }
@@ -74,4 +90,20 @@ hr {
     width: 100%;
     height: 10px;
     color: sandybrown;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
 }
