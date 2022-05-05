@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-
+/*font en iconen, algemene opmaak*/
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +43,7 @@ h5, h6 {
     color: black;
 }
 
+/*Menu-opmaak*/
 .btn-primary {
     background-color: sandybrown;
     color: black;
@@ -66,16 +67,28 @@ h5, h6 {
     color: black;
 }
 
-#bottom {
-    margin: 10px;
-    color: blue;
-}
-
+/*Opmaak back-to-top button*/
 #top {
-    margin: 10px;
-    color: blue;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
+#top:hover {
+    background-color: sandybrown;
+}
+
+/*Opmaak afbeeldingen, logo, index-lijn en lijst opsomming instellen*/
 img {
     width: 50%;
     height: auto;
@@ -96,6 +109,7 @@ ul li {
     list-style-type: square;
 }
 
+/*Opmaak voor grotere schermen*/
 @media screen and (max-width: 800px) {
     img {
         width: 100%;
