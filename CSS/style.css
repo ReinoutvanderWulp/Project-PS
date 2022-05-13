@@ -109,6 +109,19 @@ ul li {
     list-style-type: square;
 }
 
+/*Opmaak form*/
+fieldset {
+    color: brown;
+}
+
+form {
+    background-color: brown;
+}
+
+#button {
+    background-color: brown;
+}
+
 /*Opmaak voor grotere schermen*/
 @media screen and (max-width: 800px) {
     img {
