@@ -111,15 +111,53 @@ ul li {
 
 /*Opmaak form*/
 fieldset {
-    color: brown;
+    color: sandybrown;
+    border-radius: 5px;
 }
 
 form {
     background-color: brown;
+    width: 80%;
+    height: auto;
 }
 
 #button {
-    background-color: brown;
+    background-color: sandybrown;
+    border-radius: 5px;
+}
+
+input {
+    margin: 2px;
+}
+
+/*Opmaak voor de klok op afbeelding op de index*/
+
+.img-background {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+h1 {
+    width: 100%;
+    margin-top: 15%;
+    position: absolute;
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+
+#clock {
+    width: 100%;
+    position: absolute;
+    font-size: 8vw;
+    color: brown;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25%;
 }
 
 /*Opmaak voor grotere schermen*/
