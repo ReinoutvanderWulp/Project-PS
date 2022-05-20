@@ -130,34 +130,18 @@ input {
     margin: 2px;
 }
 
-/*Opmaak voor de klok op afbeelding op de index*/
-
-.img-background {
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
+.success {
+    color: green;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
 }
 
-h1 {
-    width: 100%;
-    margin-top: 15%;
-    position: absolute;
-    font-size: 7vw;
-    font-weight: bold;
+.failed {
+    color: red;
+    font-weight: 700;
+    padding: 5px;
     text-align: center;
-    color: brown;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 5px;
-}
-
-#clock {
-    width: 100%;
-    position: absolute;
-    font-size: 8vw;
-    color: brown;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 25%;
 }
 
 /*Opmaak voor grotere schermen*/

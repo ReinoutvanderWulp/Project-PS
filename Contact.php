@@ -1,3 +1,4 @@
+<?php include 'sentMail.php'; ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -26,7 +27,7 @@
                 <a href="Kenmerken.html" class="btn btn-primary">Kenmerken</a>
                 <a href="Foto's.html" class="btn btn-primary">Foto's</a>
                 <a href="FAQ.html" class="btn btn-primary">FAQ</a>
-                <a href="Contact.html" class="btn btn-primary active" aria-current="page">Contact</a>
+                <a href="Contact.php" class="btn btn-primary active" aria-current="page">Contact</a>
             </div>
         </nav>
     </header>
@@ -34,7 +35,7 @@
         <h1>Tringa - contact</h1>
         <p>Op deze pagina vindt u een contactformulier en info over eventuele verkoop.</p>
         <section>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <form action="" method="post">
                 <fieldset>
                     <label for="name"></label>
                     <input type="text" id="name" name="name" placeholder="fill in your name"><br>
@@ -46,28 +47,14 @@
                     <input type="email" id="email" name="email" placeholder="fill in your email"><br>
                     <label for="textarea"></label>
                     <textarea rows="5" cols="25" id="textarea"></textarea><br>
+                    <div>
+                        <p class="success"> <?php echo $success; ?></p>
+                        <p class="failed"> <?php echo $failed; ?></p>
+                    </div>
                     <input class="btn-primary" type="button" id="button" value="Verzend">
                 </fieldset>
             </form>
-            <?php
-            $name = $surname = $tel = $email = "";
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $name = test_input($_POST["name"]);
-                $surname = test_input($_POST["surname"]);
-                $tel = test_input($_POST["tel"]);
-                $email = test_input($_POST["email"]);
-            }
-
-            function test_input($data)
-            {
-                $data = trim($data);
-                $data = stripslashes($data);
-                $data = htmlspecialchars($data);
-                return $data;
-            }
-
-            ?>
         </section>
         <section>
             <h2>Te koop ?</h2>
@@ -82,7 +69,7 @@
         <script src="script.js"></script>
     </main>
     <footer>
-        <p>Tringa <i class="fa-solid fa-copyright"></i> 2022, Powered by Reinout van der Wulp,
+        <p>Tringa <i class="fa-solid fa-copyright"></i> 2022 - <?php echo date("Y"); ?> Powered by Reinout van der Wulp,
             student @ Thomas More Geel</p>
     </footer>
 </div>
