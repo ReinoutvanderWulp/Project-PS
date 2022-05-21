@@ -15,6 +15,7 @@ body {
 .div {
     background-color: #ffc382;
     color: black;
+    margin: 5px;
 }
 
 header {
@@ -92,17 +93,23 @@ h5, h6 {
 img {
     width: 50%;
     height: auto;
+    margin: 5px;
 }
 
 .logo {
     width: 100%;
     height: auto;
+    margin: 0;
+}
+
+.card-img-top {
+    width: 90%;
+    height: auto;
 }
 
 hr {
     width: 100%;
-    height: 10px;
-    color: sandybrown;
+    border: 2px solid brown;
 }
 
 ul li {
@@ -130,29 +137,21 @@ input {
     margin: 2px;
 }
 
-.success {
-    color: green;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-}
-
-.failed {
-    color: red;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-}
-
 /*Opmaak voor grotere schermen*/
 @media screen and (max-width: 800px) {
     img {
         width: 100%;
         height: auto;
+        margin: 5px;
     }
 
     .logo {
         width: 100%;
         height: auto;
+        margin: 0;
+    }
+
+    body {
+        font-size: 15px;
     }
 }
