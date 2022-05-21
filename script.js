@@ -37,7 +37,7 @@ function drawClock() {
 }
 
 function drawFace(ctx, radius) {
-    var grad;
+    let grad;
 
     ctx.beginPath();
     ctx.arc(0, 0, radius, 0, 2 * Math.PI);
@@ -59,8 +59,8 @@ function drawFace(ctx, radius) {
 }
 
 function drawNumbers(ctx, radius) {
-    var ang;
-    var num;
+    let ang;
+    let num;
     ctx.font = radius * 0.15 + "px arial";
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
@@ -77,10 +77,10 @@ function drawNumbers(ctx, radius) {
 }
 
 function drawTime(ctx, radius) {
-    var now = new Date();
-    var hour = now.getHours();
-    var minute = now.getMinutes();
-    var second = now.getSeconds();
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
     //hour
     hour = hour % 12;
     hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60));
